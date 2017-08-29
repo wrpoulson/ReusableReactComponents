@@ -1,0 +1,47 @@
+avoid weak wrappers (favor div over p)
+	-because it may wrap other content and nothing can be nested in a P tag
+
+specify prop types
+	-provides some type safety to prevent wrong types from being passed as props
+
+DONT HARDCODE IDs- these need to be REUSABLE
+	-accept via prop
+	-all components should have prop called htmlId
+
+Set logical defaults 
+	-save unnecessary defining
+	-help ensure/enforce useful behavior
+	-conveys components common use case to consumers
+	Stateful: myComponent.defaultProps = { initialCount: 0 }
+	Stateless: const myCounter = ({initialCount = 0}) => {
+
+accessibility matters
+	-keyboard inputs
+	-set tab index on inputs
+	-semantic html (use a button to make a button, not a div)
+	-look into ARIA inputs
+
+config objects
+	-fucking duh
+	-why pass in 10 different props, one object instead
+	-avoid if component takes in 4 or less props generally
+
+support server rendering
+	-avoid document or window calls
+	-avoid setTimeout
+
+single responsibility principle
+	-over customization makes for harder debugging
+	-more props mean more complexitiy, means more work towards maintaining
+
+atomic design
+	-atoms are basic building blocks
+	-molecules groups of two or more atoms
+	-organisms are groups of molecules functioning together
+	-templates (put components in pages)
+	-pages (populate template)
+
+
+
+
+
