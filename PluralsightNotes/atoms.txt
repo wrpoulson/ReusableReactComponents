@@ -1,0 +1,26 @@
+smallest building block of an app and foundation of a component library
+
+wrap html primitives?
+	unique element id
+	placeholder values / default values
+	enforce layout
+	easily implement error messaging
+	touched dirty meta data
+
+	Think about these better names for inputs
+		TextInput, Checkbox, Dropdown, RadioList, PickOneFromList (for radio or select list flexible)
+
+match props name to the html attribute they map to for easy understanding
+
+dont suffix arrays for no reason, users > userList
+
+SPREAD operator
+	{...this.props}
+	definitely read more
+	can be used with destructuring to pass certain props but not others to children
+
+formatting components
+	<cash>6</cash> => $6.00
+	<cash showDecimal={false}>6</cash> => $6.00
+
+
